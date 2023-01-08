@@ -29,7 +29,7 @@ use JsonSerializable;
     Table(name: "questions")
 ]
 #[AsResourceObject(type: 'questions', links: [AsResourceObject::LINK_SELF], isCompound: true)]
-class Question implements JsonSerializable, RootAggregate
+class Question extends \App\Domain\Questions\Question\QuestionId implements JsonSerializable, RootAggregate
 {
 
     use RootAggregateMethods;
