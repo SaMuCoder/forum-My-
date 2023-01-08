@@ -12,6 +12,6 @@ class IsActive implements AnswerSpecification
      */
     public function isSatisfiedBy(Answer $answer): bool
     {
-        return !$answer->isClosed();
+        return !$answer->isAccepted();
     }
 }

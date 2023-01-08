@@ -47,7 +47,7 @@ class AnswerSpec extends ObjectBehavior
 
     function it_not_closed_by_default()
     {
-        $this->isClosed()->shouldBe(false);
+        $this->isAccepted()->shouldBe(false);
     }
     function it_has_a_body()
     {

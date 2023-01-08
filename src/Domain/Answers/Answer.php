@@ -51,7 +51,7 @@ class Answer implements JsonSerializable, RootAggregate
         //isClosed
         #[Column]
         #[Attribute]
-        private bool   $isClosed = false,
+        private bool   $isAccepted = false,
 
     )
     {
@@ -100,9 +100,9 @@ class Answer implements JsonSerializable, RootAggregate
      *
      * @return bool
      */
-    public function isClosed(): bool
+    public function isAccepted(): bool
     {
-        return $this->isClosed;
+        return $this->isAccepted;
     }
 
     /**
